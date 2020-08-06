@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Message App</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+</head>
+
+<body>
+  <form>
+  <input type ="text" id="message"></input>
+  <button onclick="sendMsg(document.getElementById('message').value)">Send Message!!</button>
+  <button onclick="disConnect()">Disconnect</button>
+</form>
+  <script>
+    const socket = io('http://localhost:3000');
+
+    function sendMsg(chat) {
+      socket.emit('message', { createdAt: new Date(), text: chat});
+    }
+
+    function disConnect() {
+      socket.disconnect();
+      console.log('in disconnect function');
+    }
+  </script>
+</body>
+
+</html>
