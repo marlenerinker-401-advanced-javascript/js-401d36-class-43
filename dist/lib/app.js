@@ -21,6 +21,7 @@ io.on('connection', function (socket) {
     socket.on('message', function (message) {
         messages.push(message);
         console.log(messages);
+        io.emit('message', messages);
     });
     socket.on('disconnect', function () {
         console.log('I just disconnected');

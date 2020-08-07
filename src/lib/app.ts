@@ -31,11 +31,12 @@ io.on('connection', (socket: socketio.Socket): void => {
   
   socket.on('message', (message: Payload): void => {
     messages.push(message);
-    console.log(messages);
-  })
+    io.emit('message', messages);
+  });
   socket.on('disconnect', (): void => {
     console.log('I just disconnected');
   });
+
   
   
 });

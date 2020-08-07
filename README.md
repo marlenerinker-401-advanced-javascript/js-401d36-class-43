@@ -1,6 +1,6 @@
 # js-401d36-class-43
 
-This is a simple full stack TypeScript App.
+This is the backend of a simple full stack TypeScript App. It works with js-401d36-class-44 (the front end).
 
 It's a messaging system that allows a client application to connect to a server via web sockets.
 
@@ -21,6 +21,6 @@ typescript
 
 
 #### Running the app
-npm run compile
+npm run compile or npm start
 
 
