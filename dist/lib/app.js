@@ -20,7 +20,6 @@ io.on('connection', function (socket) {
     console.log('socket connected');
     socket.on('message', function (message) {
         messages.push(message);
-        console.log(messages);
         io.emit('message', messages);
     });
     socket.on('disconnect', function () {
