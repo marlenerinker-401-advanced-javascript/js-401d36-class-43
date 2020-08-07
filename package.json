@@ -1,0 +1,30 @@
+{
+  "name": "js-401d36-class-43",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "tsc",
+    "start": "node dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marlenerinker-401-advanced-javascript/js-401d36-class-43.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marlenerinker-401-advanced-javascript/js-401d36-class-43/issues"
+  },
+  "homepage": "https://github.com/marlenerinker-401-advanced-javascript/js-401d36-class-43#readme",
+  "keywords": [],
+  "dependencies": {
+    "@types/express": "^4.17.7",
+    "@types/node": "^14.0.27",
+    "@types/socket.io": "^2.1.10",
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0",
+    "typescript": "^3.9.7"
+  }
+}
